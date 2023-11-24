@@ -48,5 +48,15 @@ To run the project, follow these steps:
 
 ## API Endpoint
 
-- **POST /generate-paper**: Generate a question paper.
+- **POST (/generate-paper)**:  (Generate a question paper by making POST request to this route with the following JSON body)
+```
+{
+    "totalMarks": 100,
+    "difficultyPercentages": {
+        "Easy": 20,
+        "Medium": 50,
+        "Hard": 30
+    }
+}
+```
 
