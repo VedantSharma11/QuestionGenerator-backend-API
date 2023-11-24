@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qestion Api</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .inside {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #007bff;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      code {
+        background-color: #f8f9fa;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="inside">
+        <h1>Welcome to the Question Paper Generator API</h1>
+        <p>
+          To generate a question paper, make a POST request to the
+          <code>/generate-paper</code> endpoint with the following JSON body:
+        </p>
+        <pre>
+            {
+                "totalMarks": 100,
+                "difficultyPercentages": {
+                    "Easy": 20,
+                    "Medium": 50,
+                    "Hard": 30
+                }
+            }
+        </pre>
+        <p>Use <strong>POSTMAN</strong> for testing the api</p>
+      </div>
+    </div>
+  </body>
+</html>
